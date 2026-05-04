@@ -5,6 +5,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');</script>
 <style>body{font-family:'Geist',system-ui,sans-serif}.cta{background:linear-gradient(135deg,#d4a849,#b88e3a);transition:all .2s ease}.cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(212,168,73,.4)}</style>
+<!-- PostHog Analytics: autocapture + session recording + heatmaps -->
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Ie Ts Ms Ee Es Rs capture Ge calculateEventProperties Os register register_once register_for_session unregister unregister_for_session js getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ds Fs createPersonProfile Ls Ps opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Cs debug I As getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
+  api_host: "https://eu.i.posthog.com",
+  defaults: "2025-05-24",
+  person_profiles: "identified_only",
+  capture_pageview: true,
+  capture_pageleave: true,
+  autocapture: true,
+  session_recording: { maskAllInputs: true, maskTextSelector: ".sensitive" },
+  enable_heatmaps: true,
+  capture_performance: true
+});
+</script>
 </head>
 <body class="bg-white text-slate-900 antialiased">
 
@@ -57,7 +72,7 @@
         <div class="text-xs text-slate-400">12 Monate Mitgliedschaft</div>
       </div>
 
-      <a href="https://buy.stripe.com/test_aFa9AW9Y66g72bYc1YaIM03" class="cta block w-full text-white text-center py-5 rounded-lg font-bold text-xl shadow-lg mb-4">
+      <a onclick="posthog.capture(&apos;checkout_mastermind_1997&apos;)" href="https://buy.stripe.com/test_aFa9AW9Y66g72bYc1YaIM03" class="cta block w-full text-white text-center py-5 rounded-lg font-bold text-xl shadow-lg mb-4">
         JA, Inner Circle Mastermind buchen →
       </a>
 
