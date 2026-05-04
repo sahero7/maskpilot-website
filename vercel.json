@@ -10,9 +10,8 @@
       ]
     },
     {
-      "source": "/(.*).html",
+      "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
@@ -22,12 +21,10 @@
     }
   ],
   "redirects": [
-    { "source": "/agb", "destination": "/legal.html#agb", "permanent": true },
-    { "source": "/impressum", "destination": "/legal.html#impressum", "permanent": true },
-    { "source": "/datenschutz", "destination": "/legal.html#datenschutz", "permanent": true },
-    { "source": "/audit", "destination": "/audit.html", "permanent": false },
-    { "source": "/upgrade", "destination": "/upgrade-1.html", "permanent": false },
-    { "source": "/mastermind", "destination": "/upgrade-2.html", "permanent": false },
-    { "source": "/welcome", "destination": "/welcome.html", "permanent": false }
+    { "source": "/agb", "destination": "/legal#agb", "permanent": true },
+    { "source": "/impressum", "destination": "/legal#impressum", "permanent": true },
+    { "source": "/datenschutz", "destination": "/legal#datenschutz", "permanent": true },
+    { "source": "/upgrade", "destination": "/upgrade-1", "permanent": false },
+    { "source": "/mastermind", "destination": "/upgrade-2", "permanent": false }
   ]
 }
