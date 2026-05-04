@@ -4,6 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Faceless YouTube Audit (€27) — MaskPilot Pro</title>
+<meta property="og:image" content="/assets/og-image.png" />
+<meta property="og:title" content="MaskPilot Audit (€27) — Faceless YouTube System" />
 <meta name="description" content="60 Min Audit: Find heraus, ob Faceless YouTube für dich passt. Plus deine ideale Nische, erstes Video-Konzept und 90-Tage-Plan." />
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -73,14 +75,15 @@ body { font-family: 'Geist', system-ui, sans-serif; }
       Plus: Die exakte Nische, das erste Video-Konzept und ein realistischer 90-Tage-Plan — alles personalisiert für DEINE Lebenssituation. Kein Theorie-Geschwafel.
     </p>
 
-    <!-- VSL Placeholder -->
-    <div class="bg-navy-900 rounded-2xl aspect-video max-w-3xl mx-auto mb-10 flex items-center justify-center text-white/40 shadow-2xl">
-      <div class="text-center">
-        <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-3">
-          <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    <!-- VSL Thumbnail (clickable, opens modal/video later) -->
+    <div class="relative max-w-3xl mx-auto mb-10 group cursor-pointer" role="button" aria-label="Video abspielen">
+      <img src="/assets/vsl-thumb.png" alt="Video Sales Letter — €8.430/Monat ohne dein Gesicht" class="rounded-2xl aspect-video w-full object-cover shadow-2xl" loading="lazy" />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-24 h-24 bg-white/95 group-hover:bg-white rounded-full flex items-center justify-center shadow-2xl transition-all group-hover:scale-110">
+          <svg class="w-12 h-12 text-navy-700 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
         </div>
-        <div class="text-sm">[VSL einbetten — 5-7 Min Video]</div>
       </div>
+      <div class="absolute bottom-4 left-4 bg-black/70 text-white text-sm px-3 py-1 rounded-md">5-7 Min</div>
     </div>
 
     <a href="#order" class="cta-button inline-block bg-navy-700 text-white px-12 py-5 rounded-lg font-semibold text-xl shadow-xl">
