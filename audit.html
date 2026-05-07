@@ -39,6 +39,10 @@ body { font-family: 'Geist', system-ui, sans-serif; }
 .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(30, 58, 95, 0.3); }
 .checkmark { color: #22c55e; }
 .crossmark { color: #ef4444; }
+.pull-quote { border-left: 5px solid #d4a849; padding: 1rem 0 1rem 2rem; margin: 2.5rem 0; font-size: 1.4rem; line-height: 1.5; color: #1e3a5f; font-weight: 500; font-family: 'Charter', Georgia, serif; font-style: italic; }
+#progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, #d4a849, #1e3a5f); z-index: 100; width: 0%; transition: width 0.1s ease-out; }
+#sticky-cta-audit { transform: translateY(100%); transition: transform 0.3s ease-out; }
+#sticky-cta-audit.visible { transform: translateY(0); }
 </style>
 <!-- PostHog Analytics: autocapture + session recording + heatmaps -->
 <script>
@@ -59,9 +63,17 @@ posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
 
 <body class="bg-white text-slate-900 antialiased">
 
+<!-- Reading Progress Bar -->
+<div id="progress-bar"></div>
+
+<!-- Avatar Callout (JH: identify avatar in headline area) -->
+<div class="bg-amber-50 text-amber-900 text-center py-2 text-sm border-b border-amber-200">
+  <span class="font-medium">📌 Für: Vollzeit-Angestellte in DACH · 4-6h/Woche · ohne Kamera-Lust</span>
+</div>
+
 <!-- Top Banner -->
 <div class="bg-navy-700 text-white text-center py-2 text-sm">
-  <span class="font-medium">⏰ Aktuell: <span id="spots-left">147</span> von 200 Audit-Plätzen diesen Monat verfügbar</span>
+  <span class="font-medium">⏰ Aktuell: <span id="spots-left">147</span> von 200 Audit-Plätzen diesen Monat verfügbar (jedes wird persönlich ausgewertet)</span>
 </div>
 
 <!-- Header -->
@@ -80,6 +92,7 @@ posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
 <!-- Hero -->
 <section class="bg-gradient-to-b from-navy-50 to-white py-12 md:py-20">
   <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-base uppercase tracking-wider font-semibold text-accent-600 mb-3">60 Minuten · €27 · 14-Tage-Garantie</p>
     <div class="inline-block bg-accent-500/10 text-accent-600 text-xs font-semibold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6">
       Faceless YouTube Audit
     </div>
@@ -259,6 +272,47 @@ posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- "What Happens After You Buy" — JH: reduce buying anxiety -->
+<section class="py-12 bg-white border-t border-slate-100">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <div class="text-accent-600 font-semibold uppercase tracking-wider text-sm mb-2">Was direkt nach dem Kauf passiert</div>
+      <h2 class="text-2xl md:text-3xl font-bold text-navy-900">In den nächsten 5 Minuten</h2>
+    </div>
+
+    <ol class="space-y-5">
+      <li class="flex gap-4 items-start">
+        <span class="bg-accent-500 text-white rounded-full w-9 h-9 flex items-center justify-center font-bold text-sm flex-shrink-0">1</span>
+        <div>
+          <strong class="text-navy-900 block mb-1">Sofort-Email mit Audit-Zugang</strong>
+          <span class="text-slate-600">Innerhalb von 30 Sekunden bekommst du eine Email von michael@maskpilot.com mit deinem Login-Link.</span>
+        </div>
+      </li>
+      <li class="flex gap-4 items-start">
+        <span class="bg-accent-500 text-white rounded-full w-9 h-9 flex items-center justify-center font-bold text-sm flex-shrink-0">2</span>
+        <div>
+          <strong class="text-navy-900 block mb-1">4 Module starten — in deinem Tempo</strong>
+          <span class="text-slate-600">Block 60 Min ungestört. Module 1-4 in einer Sitzung. Du kannst pausieren wann du willst.</span>
+        </div>
+      </li>
+      <li class="flex gap-4 items-start">
+        <span class="bg-accent-500 text-white rounded-full w-9 h-9 flex items-center justify-center font-bold text-sm flex-shrink-0">3</span>
+        <div>
+          <strong class="text-navy-900 block mb-1">Persönliche Auswertung per Email (24-48h)</strong>
+          <span class="text-slate-600">Schick mir deine Antworten zurück. Ich werte JEDES Audit persönlich aus. Deshalb max. 200/Monat.</span>
+        </div>
+      </li>
+      <li class="flex gap-4 items-start">
+        <span class="bg-accent-500 text-white rounded-full w-9 h-9 flex items-center justify-center font-bold text-sm flex-shrink-0">4</span>
+        <div>
+          <strong class="text-navy-900 block mb-1">Du entscheidest, ob du weitergehen willst</strong>
+          <span class="text-slate-600">Nach dem Audit weißt du: passt's für dich oder nicht. Wenn ja → MaskPilot Pro. Wenn nein → kein Druck. Refund auf Wunsch.</span>
+        </div>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -481,14 +535,57 @@ posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
     <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
       Wenn du die nächsten 6 Monate weiter YouTube-Tutorials konsumierst ohne zu starten — wirst du in 6 Monaten an der gleichen Stelle sein wie heute.
     </p>
-    <a href="#order" class="inline-block bg-accent-500 hover:bg-accent-600 text-white px-12 py-5 rounded-lg font-bold text-xl shadow-xl transition-colors">
+    <a href="#order" onclick="posthog.capture('cta_click_audit_final')" class="inline-block bg-accent-500 hover:bg-accent-600 text-white px-12 py-5 rounded-lg font-bold text-xl shadow-xl transition-colors">
       Audit-Platz reservieren (€27)
     </a>
   </div>
 </section>
 
+<!-- P.S. Block (JH: 2nd highest read after subject) -->
+<section class="py-12 bg-white">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="bg-slate-50 border-l-4 border-navy-700 rounded-2xl p-6 md:p-8">
+      <p class="font-bold text-navy-900 mb-3 text-lg">P.S.</p>
+      <p class="text-slate-700 mb-3 leading-relaxed">€27 ist der Preis von 3 Bier in München. 60 Minuten ist weniger als eine Folge "Tatort". Die 14-Tage-Geld-zurück-Garantie macht das Risiko faktisch null.</p>
+      <p class="text-slate-700 mb-3 leading-relaxed">Wenn das Audit dir nicht klar zeigt, ob Faceless YouTube für dich Sinn macht — Email an support@maskpilot.com mit Order-ID. Volle Rückerstattung in 7 Werktagen. Kein Quiz. Kein "Gespräch zur Klärung". Email reicht.</p>
+      <p class="text-slate-700 leading-relaxed">Wer in 6 Monaten an gleicher Stelle stehen will wie heute → kein Audit nötig. Wer ein zweites Standbein bauen will → Audit ist Schritt 1.</p>
+      <p class="mt-5">
+        <a href="#order" onclick="posthog.capture('cta_click_audit_ps')" class="text-navy-700 font-semibold hover:underline">→ Audit für €27 starten</a>
+      </p>
+    </div>
+    <p class="text-base text-slate-500 italic mt-4">P.P.S. 200 Audits/Monat ist kein Fake-Limit — ich werte jedes persönlich aus. Wenn voll, schließen wir bis zum Folgemonat.</p>
+  </div>
+</section>
+
+<!-- Sticky Mobile CTA -->
+<div id="sticky-cta-audit" class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-2xl z-50 md:hidden">
+  <div class="px-4 py-3 flex items-center gap-3">
+    <div class="flex-1">
+      <div class="text-xs text-slate-500">Faceless YouTube Audit</div>
+      <div class="font-bold text-navy-900">€27 · 14-Tage-Garantie</div>
+    </div>
+    <a href="#order" onclick="posthog.capture('cta_click_audit_sticky')" class="cta-button bg-navy-700 text-white px-6 py-3 rounded-lg font-bold text-sm">Jetzt starten →</a>
+  </div>
+</div>
+
+<script>
+window.addEventListener('scroll', function() {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  document.getElementById('progress-bar').style.width = (winScroll / height * 100) + '%';
+  const sticky = document.getElementById('sticky-cta-audit');
+  const order = document.getElementById('order');
+  const orderTop = order ? order.getBoundingClientRect().top : 9999;
+  if (window.scrollY > 400 && orderTop > window.innerHeight) {
+    sticky.classList.add('visible');
+  } else {
+    sticky.classList.remove('visible');
+  }
+});
+</script>
+
 <!-- Footer -->
-<footer class="bg-slate-900 text-slate-400 py-10">
+<footer class="bg-slate-900 text-slate-400 py-10 mb-16 md:mb-0">
   <div class="max-w-5xl mx-auto px-6 text-center text-sm">
     © 2026 MaskPilot Pro · <a href="/agb.html" class="hover:text-white">AGB</a> · <a href="/impressum.html" class="hover:text-white">Impressum</a> · <a href="/datenschutz.html" class="hover:text-white">Datenschutz</a>
     <div class="mt-3 text-xs text-slate-500">Hinweis: Verdienste sind individuell und nicht garantiert.</div>
