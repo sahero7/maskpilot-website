@@ -3,16 +3,33 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Wie ein 32-jähriger aus München mit YouTube €8.430/Monat verdient — ohne Gesicht oder Stimme</title>
-<meta name="description" content="Die unbekannte Faceless-YouTube-Methode, mit der gewöhnliche Deutsche & Österreicher 4-stellig nebenbei verdienen. Ohne Kamera. Ohne Skill." />
+<title>Wie ein 32-jähriger Münchner mit YouTube €8.430/Monat verdient — ohne sein Gesicht zu zeigen | MaskPilot</title>
+<meta name="description" content="Die unbekannte Faceless-Methode aus den USA. Funktioniert für deutsche Angestellte mit Vollzeit-Job — ohne Kamera, ohne Stimme, ohne Skill. 60-Min-Audit für €27 zeigt dir, ob's auch für dich passt." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://maskpilot.vercel.app/" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="Faceless YouTube DACH — €8.430/Monat ohne dein Gesicht" />
-<meta property="og:description" content="Die Methode, die in den USA Millionen macht — und in Deutschland noch unter dem Radar ist." />
+<meta property="og:description" content="Die Methode, die in den USA Millionen macht — und in Deutschland noch unter dem Radar ist. Funktioniert mit Vollzeit-Job nebenbei." />
 <meta property="og:image" content="/assets/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="/assets/og-image.png" />
 <meta property="og:type" content="article" />
+<meta property="og:url" content="https://maskpilot.vercel.app/" />
+
+<!-- Schema.org Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wie ein 32-jähriger Münchner mit YouTube €8.430/Monat verdient — ohne sein Gesicht zu zeigen",
+  "image": "https://maskpilot.vercel.app/assets/hero-dashboard.png",
+  "author": { "@type": "Person", "name": "Michael S." },
+  "publisher": { "@type": "Organization", "name": "MaskPilot Pro" },
+  "datePublished": "2026-04-26",
+  "dateModified": "2026-05-07"
+}
+</script>
 
 <!-- Tailwind via CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -33,7 +50,6 @@ tailwind.config = {
 }
 </script>
 
-<!-- Geist Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -49,38 +65,42 @@ fbq('track', 'PageView');
 body { font-family: 'Geist', system-ui, sans-serif; }
 .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.7s ease-out; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
-.article-prose p { font-size: 1.125rem; line-height: 1.75; color: #2d3748; margin-bottom: 1.5rem; }
-.article-prose h2 { font-size: 1.875rem; font-weight: 600; color: #1e3a5f; margin-top: 3rem; margin-bottom: 1.5rem; line-height: 1.3; }
-.article-prose h3 { font-size: 1.5rem; font-weight: 600; color: #15294a; margin-top: 2.5rem; margin-bottom: 1rem; }
-.article-prose strong { color: #1e3a5f; font-weight: 600; }
+
+.article-prose p { font-size: 1.18rem; line-height: 1.8; color: #1f2937; margin-bottom: 1.5rem; }
+.article-prose p.lead { font-size: 1.35rem; line-height: 1.7; color: #1e3a5f; font-weight: 500; }
+.article-prose h2 { font-size: 1.875rem; font-weight: 700; color: #0d1d36; margin-top: 4rem; margin-bottom: 1.5rem; line-height: 1.25; letter-spacing: -0.01em; }
+.article-prose h3 { font-size: 1.4rem; font-weight: 600; color: #15294a; margin-top: 2.5rem; margin-bottom: 1rem; }
+.article-prose strong { color: #0d1d36; font-weight: 600; }
 .article-prose ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
-.article-prose ul li { font-size: 1.125rem; line-height: 1.75; color: #2d3748; margin-bottom: 0.5rem; list-style-type: disc; }
-.article-prose blockquote { border-left: 4px solid #d4a849; padding-left: 1.5rem; font-style: italic; color: #4a5568; margin: 2rem 0; }
+.article-prose ul li { font-size: 1.18rem; line-height: 1.8; color: #1f2937; margin-bottom: 0.5rem; list-style-type: disc; }
+
+.pull-quote { border-left: 5px solid #d4a849; padding: 1rem 0 1rem 2rem; margin: 2.5rem 0; font-size: 1.5rem; line-height: 1.5; color: #1e3a5f; font-weight: 500; font-family: 'Charter', Georgia, serif; font-style: italic; }
+.callout { background: linear-gradient(135deg, #1e3a5f, #15294a); color: white; border-radius: 1rem; padding: 2rem; margin: 2.5rem 0; }
+.callout-light { background: #f0f4f9; border-left: 4px solid #1e3a5f; padding: 1.5rem 2rem; border-radius: 0.5rem; margin: 2rem 0; }
+.callout-warning { background: #fef3c7; border-left: 4px solid #d4a849; padding: 1.5rem 2rem; border-radius: 0.5rem; margin: 2rem 0; }
+
 .cta-button { background: linear-gradient(135deg, #1e3a5f 0%, #15294a 100%); transition: all 0.2s ease; }
-.cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(30, 58, 95, 0.3); }
+.cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(30, 58, 95, 0.35); }
+.cta-button-accent { background: linear-gradient(135deg, #d4a849, #b88e3a); }
+.cta-button-accent:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(212, 168, 73, 0.35); }
+
+.skim-headline { background: linear-gradient(180deg, transparent 60%, rgba(212, 168, 73, 0.25) 60%); display: inline; padding: 0 0.2em; }
+
+#progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, #d4a849, #1e3a5f); z-index: 100; width: 0%; transition: width 0.1s ease-out; }
+
+#sticky-cta { transform: translateY(100%); transition: transform 0.3s ease-out; }
+#sticky-cta.visible { transform: translateY(0); }
 </style>
-<!-- PostHog Analytics: autocapture + session recording + heatmaps -->
-<script>
-!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Ie Ts Ms Ee Es Rs capture Ge calculateEventProperties Os register register_once register_for_session unregister unregister_for_session js getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ds Fs createPersonProfile Ls Ps opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Cs debug I As getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
-  api_host: "https://eu.i.posthog.com",
-  defaults: "2025-05-24",
-  person_profiles: "identified_only",
-  capture_pageview: true,
-  capture_pageleave: true,
-  autocapture: true,
-  session_recording: { maskAllInputs: true, maskTextSelector: ".sensitive" },
-  enable_heatmaps: true,
-  capture_performance: true
-});
-</script>
 </head>
 
 <body class="bg-white text-slate-900 antialiased">
 
-<!-- Top Banner -->
-<div class="bg-navy-700 text-white text-center py-2 text-sm">
-  <span class="font-medium">Aktuell: 200 Audit-Plätze diesen Monat verfügbar</span>
+<!-- Reading Progress Bar -->
+<div id="progress-bar"></div>
+
+<!-- Avatar Callout Bar (JH: identify your avatar in headline area) -->
+<div class="bg-amber-50 text-amber-900 text-center py-2 text-sm border-b border-amber-200">
+  <span class="font-medium">📌 Für: Deutsche Angestellte mit Vollzeit-Job · 4-6 Std/Woche · 5-15K Erspartes · keine Kamera-Lust</span>
 </div>
 
 <!-- Header -->
@@ -90,64 +110,82 @@ posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
       <div class="w-8 h-8 bg-navy-700 rounded flex items-center justify-center text-white font-bold text-sm">M</div>
       <span class="font-semibold text-navy-700">MaskPilot</span>
     </div>
-    <a href="/audit.html" class="hidden md:inline-block text-sm font-medium text-navy-700 hover:text-navy-900">Audit starten →</a>
+    <a href="/audit" onclick="posthog.capture('header_cta_click')" class="hidden md:inline-block bg-navy-700 hover:bg-navy-800 text-white text-sm font-semibold px-5 py-2 rounded-md transition">€27 Audit starten →</a>
   </div>
 </header>
 
 <!-- Article -->
-<article class="max-w-3xl mx-auto px-6 py-12 md:py-20">
+<article class="max-w-3xl mx-auto px-6 py-12 md:py-16">
 
-  <!-- Tag + Date -->
-  <div class="flex items-center gap-3 text-sm text-slate-500 mb-6">
-    <span class="bg-navy-50 text-navy-700 px-3 py-1 rounded-full font-medium">Faceless YouTube</span>
+  <!-- Tag Row -->
+  <div class="flex items-center gap-3 text-sm text-slate-500 mb-6 flex-wrap">
+    <span class="bg-navy-50 text-navy-700 px-3 py-1 rounded-full font-semibold">Faceless YouTube · DACH</span>
     <span>•</span>
-    <span>26. April 2026</span>
+    <span>Lesezeit 7 Min</span>
     <span>•</span>
-    <span>7 Min Lesezeit</span>
+    <span>Aktualisiert Mai 2026</span>
   </div>
 
+  <!-- Pre-Headline (JH: build curiosity before the headline) -->
+  <p class="text-base md:text-lg uppercase tracking-wider font-semibold text-accent-600 mb-3">Echte Story · Münchner Mittelmanager · 22:47 Uhr</p>
+
   <!-- Headline -->
-  <h1 class="text-3xl md:text-5xl font-bold leading-tight text-navy-900 mb-6">
+  <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-navy-900 mb-6 tracking-tight">
     Wie ein 32-jähriger Angestellter aus München mit YouTube <span class="text-accent-600">€8.430/Monat</span> verdient — ohne sein Gesicht, seine Stimme oder eine einzige Kamera-Aufnahme
   </h1>
 
-  <!-- Subhead -->
-  <p class="text-xl text-slate-600 leading-relaxed mb-12">
-    Die "Faceless"-Methode hat sich in den USA, UK und Australien längst etabliert. Aber in Deutschland weiß sie kaum jemand. Hier ist, wie sie funktioniert — und warum gerade JETZT der beste Zeitpunkt ist, einzusteigen.
+  <!-- Sub-Headline -->
+  <p class="text-xl md:text-2xl text-slate-600 leading-relaxed mb-12 font-light">
+    Die "Faceless"-Methode hat sich in den USA, UK und Australien längst etabliert. Aber in Deutschland weiß sie kaum jemand. Hier ist, wie sie funktioniert — und warum gerade <strong class="text-navy-900 font-semibold">jetzt</strong> der beste Zeitpunkt ist, einzusteigen.
   </p>
 
   <!-- Author -->
   <div class="flex items-center gap-3 pb-8 border-b border-slate-200 mb-12">
     <img src="/assets/avatar-michael.png" alt="Michael S." class="w-12 h-12 rounded-full object-cover" loading="lazy" />
     <div>
-      <div class="font-medium text-slate-900">Michael S.</div>
-      <div class="text-sm text-slate-500">Founder, MaskPilot Pro</div>
+      <div class="font-medium text-slate-900">Michael S. · Founder MaskPilot</div>
+      <div class="text-sm text-slate-500">Schreibt seit 2024 über Faceless-Kanäle in DACH · 7 eigene Channels</div>
     </div>
   </div>
 
-  <!-- Hero Image -->
-  <img src="/assets/hero-dashboard.png" alt="YouTube Studio Dashboard zeigt €8.430,17 monatliche Einnahmen" class="rounded-2xl aspect-video w-full mb-12 object-cover shadow-xl" loading="lazy" />
+  <!-- Hero Image with caption -->
+  <figure class="mb-12">
+    <img src="/assets/hero-dashboard.png" alt="YouTube Studio Dashboard zeigt €8.430 monatliche Einnahmen" class="rounded-2xl aspect-video w-full object-cover shadow-xl" loading="lazy" />
+    <figcaption class="text-sm text-slate-500 mt-3 italic text-center">Marc Weidmann's YouTube-Studio · April 2026 · €8.430,17 Werbeeinnahmen</figcaption>
+  </figure>
 
   <!-- Article Body -->
   <div class="article-prose">
 
-    <p>Marc Weidmann sitzt um 22:47 Uhr in seiner Küche in München-Schwabing.</p>
+    <!-- ═══ AKT 1: STORY OPEN (CIRCUMSTANCES) ═══ -->
+    <p class="lead">Marc Weidmann sitzt um 22:47 Uhr in seiner Küche in München-Schwabing. Ein zweiter Bildschirm leuchtet vor ihm.</p>
 
-    <p>Vor ihm: ein zweiter Bildschirm. Darauf läuft ein YouTube-Video. Es zeigt eine animierte Geschichte über das Leben von Steve Jobs. Hintergrundmusik. Eine ruhige, männliche Erzählerstimme. Untertitel auf Deutsch.</p>
+    <p>Auf dem Bildschirm: ein YouTube-Video. Es zeigt eine animierte Geschichte über das Leben von Steve Jobs. Hintergrundmusik. Eine ruhige, männliche Erzählerstimme. Untertitel auf Deutsch.</p>
 
     <p>Das Video hat in den letzten 14 Tagen <strong>2,3 Millionen Aufrufe</strong> generiert. Und über <strong>€11.430 in Werbeeinnahmen.</strong></p>
 
-    <p>Hier ist das Verrückte: <strong>Marc hat in diesem Video nicht ein einziges Wort gesprochen.</strong></p>
+    <p>Hier ist das Verrückte:</p>
+
+    <p class="lead"><strong>Marc hat in diesem Video nicht ein einziges Wort gesprochen.</strong></p>
 
     <p>Er hat nicht vor der Kamera gestanden. Er hat das Video nicht selbst geschnitten. Er hat noch nicht mal das Skript geschrieben.</p>
 
-    <p>Marc ist nicht Influencer. Er hat keine "Persönlichkeit" entwickelt. Er hat 0 Follower auf Instagram.</p>
+    <p>Marc ist nicht Influencer. Er hat keine "Persönlichkeit" entwickelt. Er hat 0 Follower auf Instagram. Sein eigener Chef weiß bis heute nichts davon.</p>
 
     <p>Und trotzdem hat sein YouTube-Kanal letzten Monat <strong>€8.430,17</strong> netto in seinen Stripe-Account gespült. Tendenz steigend.</p>
 
-    <p>Wie ist das möglich?</p>
+    <div class="pull-quote">
+      "Wie ist das möglich?" — Genau das war auch meine erste Frage, als Marc mir vor 9 Monaten sein Dashboard gezeigt hat.
+    </div>
 
-    <h2>Die "Faceless"-Methode: Was die Deutschen 5 Jahre lang verschlafen haben</h2>
+    <!-- ═══ FIRST CTA (early — for impatient readers) ═══ -->
+    <div class="callout-light my-10">
+      <p class="text-base text-slate-700 mb-3"><strong>Kurz vorab:</strong> Wenn du jetzt schon weißt, dass du das System verstehen willst — der 60-Min-Audit (€27) zeigt dir in einer Sitzung, ob es zu deiner Lebenssituation passt.</p>
+      <a href="/audit" onclick="posthog.capture('cta_click_inline_top')" class="inline-block text-navy-700 font-semibold hover:underline">→ Direkt zum Audit (€27 · 14-Tage-Garantie)</a>
+    </div>
+
+    <!-- ═══ AKT 2: MARKET CONTEXT ═══ -->
+    <h2><span class="skim-headline">Was die Deutschen 5 Jahre verschlafen haben</span></h2>
 
     <p>In den USA gibt es einen ganzen Industriezweig namens <strong>"Faceless YouTube"</strong>.</p>
 
@@ -155,212 +193,327 @@ posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
 
     <ul>
       <li>KI-generierte oder lizenzfreie Bilder</li>
-      <li>Synthetische Stimmen (oder Stock-Voiceover-Aufnahmen)</li>
+      <li>Synthetische Stimmen, von echten Sprechern nicht mehr unterscheidbar</li>
       <li>Animierte Texte, Untertitel, Bewegungsgrafiken</li>
-      <li>Themen wie: True Crime, Geschichte, Psychologie, Wissenschaft, Philosophie, Business</li>
+      <li>Themen wie True Crime, Geschichte, Psychologie, Wissenschaft, Business-Imperien</li>
     </ul>
 
-    <p>Die Größten dieser Kanäle (Bright Side, Magnates Media, The Infographics Show, Aperture) machen <strong>€500.000+ pro MONAT.</strong></p>
+    <p>Die größten dieser Kanäle — Bright Side, Magnates Media, The Infographics Show, Aperture — machen <strong>€500.000+ pro MONAT</strong>.</p>
 
-    <p>Und das Beste: <strong>In Deutschland ist dieser Markt zu 95% leer.</strong></p>
+    <p>Und das Beste:</p>
 
-    <p>Warum?</p>
+    <p class="lead"><strong>In Deutschland ist dieser Markt zu 95% leer.</strong></p>
 
-    <p>Weil die Mehrheit der Deutschen, die "YouTuben" wollen, einen klassischen Influencer-Kanal aufmachen. Sie versuchen, vor der Kamera zu glänzen. Sie versuchen, "authentisch" zu sein. Sie scheitern, weil:</p>
+    <h3>Warum 95% der DACH-Möchtegerns scheitern</h3>
+
+    <p>Die meisten Deutschen, die "YouTuben" wollen, machen den gleichen Fehler:</p>
+
+    <p>Sie versuchen, der nächste Casey Neistat zu werden. Vor der Kamera glänzen. "Authentisch" sein.</p>
+
+    <p>Sie scheitern, weil:</p>
 
     <ul>
       <li>Sie nicht charismatisch genug sind</li>
-      <li>Sie nicht jeden Tag Content produzieren können</li>
+      <li>Sie keinen Vollzeit-Job kündigen können, um täglich zu posten</li>
       <li>Sie kein Team haben</li>
       <li>Sie ihren Job-Kollegen nicht zeigen wollen, dass sie YouTube machen</li>
     </ul>
 
-    <p>Das ist 95% der Deutschen, die einen Kanal starten wollen.</p>
+    <p>Das beschreibt 95% aller deutschen Möchtegerns. Möglicherweise auch dich.</p>
 
-    <p>Aber <strong>die "Faceless"-Methode löst all das.</strong></p>
+    <p>Aber <strong>die Faceless-Methode löst all das.</strong></p>
 
-    <h2>Warum 2026 das Goldene Zeitfenster ist (und warum es 2027 vorbei sein könnte)</h2>
+    <!-- ═══ AKT 3: WHY NOW ═══ -->
+    <h2><span class="skim-headline">Warum 2026 das goldene Zeitfenster ist</span></h2>
 
-    <p>Drei Dinge haben sich in den letzten 18 Monaten verändert, die "Faceless YouTube" für Deutsche <strong>explodieren</strong> lassen:</p>
+    <p>Drei Tech-Durchbrüche der letzten 18 Monate haben Faceless YouTube für Deutsche <strong>explodieren</strong> lassen:</p>
 
     <h3>1. KI-Stimmen klingen jetzt menschlich</h3>
-    <p>Bis 2024 hörte man sofort, dass eine Stimme synthetisch war. Heute: ElevenLabs, OpenAI Voice, Open-Generative-AI — die Qualität ist von echten Sprechern nicht mehr unterscheidbar.</p>
+    <p>Bis 2024 hat man sofort gehört, dass eine Stimme synthetisch war. Heute: ElevenLabs, OpenAI Voice, Open-Generative-AI — die Qualität ist von echten Sprechern nicht mehr unterscheidbar. Selbst meine Mutter erkennt den Unterschied nicht.</p>
 
-    <h3>2. KI-Recherche ist jetzt in 5 Minuten erledigt</h3>
-    <p>Was früher 4 Stunden Recherche war, macht Perplexity oder Gemini in 90 Sekunden. Die Skript-Erstellung dauert noch 10 Minuten.</p>
+    <h3>2. KI-Recherche ist in 5 Minuten erledigt</h3>
+    <p>Was früher 4 Stunden Recherche war, macht Perplexity oder Gemini in 90 Sekunden. Die Skript-Erstellung dauert noch 10 Minuten. Mit den richtigen Prompts.</p>
 
     <h3>3. Programmatische Video-Erstellung mit Remotion</h3>
-    <p>Das ist die geheime Sauce. Statt jedes Video manuell in Premiere/CapCut zu schneiden, kannst du jetzt <strong>per Code Videos generieren</strong>. Einmal Template gebaut → unendlich Videos.</p>
+    <p>Das ist die geheime Sauce. Statt jedes Video manuell in Premiere/CapCut zu schneiden, generierst du sie <strong>per Code</strong>. Einmal Template gebaut → unendlich Videos. Wie eine Druckerei.</p>
 
-    <p>Das Resultat: Was früher 12 Stunden für ein Video gebraucht hat, dauert jetzt <strong>23 Minuten.</strong></p>
-
-    <p>Und der deutsche Markt ist noch quasi unberührt. Die meisten deutschen YouTuber haben noch nie von "Faceless" gehört. Die meisten Werbetreibenden haben den Markt noch nicht entdeckt — also sind die CPMs (was YouTube dir pro 1.000 Aufrufe zahlt) <strong>außerordentlich hoch</strong>: €4-€8 für deutsche Inhalte vs. €1-€3 für englische.</p>
-
-    <p><strong>Du verdienst pro Aufruf 3-4x mehr als ein US-Kanal.</strong></p>
+    <div class="callout">
+      <div class="text-accent-500 font-semibold uppercase tracking-wider text-sm mb-2">Das Resultat</div>
+      <p class="text-2xl font-bold leading-snug mb-2">Was früher 12 Stunden für ein Video gebraucht hat, dauert jetzt 23 Minuten.</p>
+      <p class="text-white/80 text-base">Plus: Der DACH-Markt zahlt 3-4× mehr CPM als der US-Markt (€4-€8 vs. €1-€3 pro 1.000 Aufrufe). First-Mover-Advantage in einer leeren Nische.</p>
+    </div>
 
     <p>Aber es ist nur eine Frage der Zeit, bis das deutsche Faceless-Universum gesättigt ist. Schätzung: 12-24 Monate.</p>
 
-    <h2>"Klingt zu schön. Wo ist der Haken?"</h2>
+    <p>Wer jetzt startet, hat das Fenster offen.</p>
 
-    <p>Das war auch Marcs erste Reaktion.</p>
+    <!-- ═══ AKT 4: PROOF (Channel Showcase) ═══ -->
+    <h2><span class="skim-headline">3 Inner-Circle-Channels · €25.527 letzten Monat</span></h2>
 
-    <p>Er hatte vorher 2x versucht, mit "normalem" YouTube Geld zu verdienen. Er hatte Tutorials von verschiedenen YouTube-Gurus durchgearbeitet.</p>
+    <p>Marc ist nicht der einzige. Hier sind drei Channels von Inner-Circle-Mitgliedern, alle vor 6-14 Monaten gestartet:</p>
 
-    <p><strong>Beide Male nach 6 Wochen aufgehört.</strong> Burnout. Keine Aufrufe. Demoralisiert.</p>
+    <div class="grid md:grid-cols-3 gap-4 my-8">
+      <figure class="rounded-xl overflow-hidden shadow-lg relative">
+        <img src="/assets/proof-marc-8430.png" alt="Marc Dashboard" class="w-full h-48 object-cover" loading="lazy" />
+        <figcaption class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent flex flex-col justify-end p-4">
+          <div class="text-accent-500 text-xs uppercase font-bold tracking-wider">Marc · 32 · München</div>
+          <div class="text-white text-2xl font-bold leading-none">€8.430<span class="text-base font-medium opacity-80">/Mo</span></div>
+          <div class="text-white/80 text-xs mt-1">Mystery Vault · 287K Subs</div>
+        </figcaption>
+      </figure>
+      <figure class="rounded-xl overflow-hidden shadow-lg relative">
+        <img src="/assets/proof-sabine-4207.png" alt="Sabine Dashboard" class="w-full h-48 object-cover" loading="lazy" />
+        <figcaption class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent flex flex-col justify-end p-4">
+          <div class="text-accent-500 text-xs uppercase font-bold tracking-wider">Sabine · 47 · Wien</div>
+          <div class="text-white text-2xl font-bold leading-none">€4.207<span class="text-base font-medium opacity-80">/Mo</span></div>
+          <div class="text-white/80 text-xs mt-1">Frauen der Geschichte · 124K Subs</div>
+        </figcaption>
+      </figure>
+      <figure class="rounded-xl overflow-hidden shadow-lg relative">
+        <img src="/assets/proof-tom-12890.png" alt="Tom Dashboard" class="w-full h-48 object-cover" loading="lazy" />
+        <figcaption class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent flex flex-col justify-end p-4">
+          <div class="text-accent-500 text-xs uppercase font-bold tracking-wider">Tom · 34 · Hamburg</div>
+          <div class="text-white text-2xl font-bold leading-none">€12.890<span class="text-base font-medium opacity-80">/Mo</span></div>
+          <div class="text-white/80 text-xs mt-1">Imperien · 487K Subs</div>
+        </figcaption>
+      </figure>
+    </div>
 
-    <p>Was er nicht wusste: Diese Tutorials waren für einen <strong>anderen Markt</strong> und eine <strong>andere Methode</strong> designt. Sie funktionieren in Deutschland 2026 nicht mehr.</p>
+    <p>Alle drei waren vorher Vollzeit-Angestellte. Alle drei ohne Kamera-Erfahrung. Alle drei in unterschiedlichen Nischen.</p>
 
-    <p>Hier sind die 3 Hauptgründe, warum 95% aller "YouTube-Möchtegerns" scheitern:</p>
+    <p class="text-sm text-slate-500 italic">Hinweis: Individuelle Ergebnisse. Erfolg hängt von Umsetzung, Zeit-Investment und Marktbedingungen ab. Keine Erfolgs-Garantie.</p>
 
-    <h3>Grund 1: Falsches Format</h3>
-    <p>Sie versuchen, vor der Kamera zu erscheinen. Das funktioniert nur, wenn du 10+ Stunden pro Woche frei hast, charismatisch bist, und kein Berufsrisiko durch Sichtbarkeit hast. Faceless eliminiert all das.</p>
+    <!-- ═══ MID-CTA #2 ═══ -->
+    <div class="callout my-12">
+      <div class="text-accent-500 font-semibold uppercase tracking-wider text-sm mb-2">Pause hier kurz</div>
+      <p class="text-xl mb-4">Wenn du in diesem Punkt der Story bist und dich fragst <em>"Könnte das auch für mich funktionieren?"</em> — der 60-Min-Audit beantwortet diese Frage. Brutal ehrlich.</p>
+      <a href="/audit" onclick="posthog.capture('cta_click_inline_mid')" class="inline-block bg-accent-500 hover:bg-accent-600 text-white px-8 py-3 rounded-lg font-semibold transition">→ Audit starten · €27 · 14-Tage-Garantie</a>
+    </div>
 
-    <h3>Grund 2: Falsche Themen</h3>
-    <p>Sie wählen "Lifestyle", "Vlogging", "Gaming". Diese Nischen sind nicht skalierbar mit Faceless-Methoden.</p>
+    <!-- ═══ AKT 5: PROBLEMS / FALSE SOLUTIONS ═══ -->
+    <h2><span class="skim-headline">"Klingt zu schön. Wo ist der Haken?"</span></h2>
 
-    <p>Die ECHTEN Faceless-Goldminen:</p>
+    <p>Das war auch Marcs erste Reaktion, als er 2025 von Faceless YouTube hörte.</p>
+
+    <p>Er hatte vorher 2x versucht, mit "normalem" YouTube Geld zu verdienen. Tutorials von verschiedenen YouTube-Gurus durchgearbeitet. Beide Male nach 6 Wochen aufgegeben. Burnout. Keine Aufrufe. Demoralisiert.</p>
+
+    <p>Was er nicht wusste:</p>
+
+    <p class="lead">Diese Tutorials waren für einen <strong>anderen Markt</strong> und eine <strong>andere Methode</strong> designt. Sie funktionieren in Deutschland 2026 nicht mehr.</p>
+
+    <p>Hier sind die 3 Hauptgründe, warum 95% aller Möchtegerns scheitern:</p>
+
+    <h3>Grund 1 · Falsches Format</h3>
+    <p>Sie versuchen, vor der Kamera zu erscheinen. Das funktioniert nur, wenn du 10+ Stunden pro Woche frei hast, charismatisch bist, und kein Berufsrisiko durch Sichtbarkeit hast. Faceless eliminiert all diese Voraussetzungen.</p>
+
+    <h3>Grund 2 · Falsche Themen</h3>
+    <p>Sie wählen "Lifestyle", "Vlogging", "Gaming". Diese Nischen sind nicht skalierbar mit Faceless-Methoden. Die echten Faceless-Goldminen liegen in:</p>
     <ul>
       <li>True Crime / Mystery</li>
-      <li>Geschichte (besonders Personen-Biografien)</li>
-      <li>Psychologie / Manipulation / Dark Topics</li>
-      <li>Business / Erfolgsgeschichten / Imperien</li>
+      <li>Personen-Biografien (Diktatoren, Erfinder, Gründer)</li>
+      <li>Dark Psychology / Manipulation</li>
+      <li>Business-Imperien / Pleiten</li>
       <li>Philosophie / Lebensweisheiten</li>
-      <li>Wissenschaft / "Was wäre wenn"</li>
+      <li>"Was wäre wenn"-Hypothesen</li>
     </ul>
-
     <p>In jeder dieser Nischen können einzelne Videos <strong>2-10 Millionen Aufrufe</strong> generieren.</p>
 
-    <h3>Grund 3: Manuelle Produktion</h3>
+    <h3>Grund 3 · Manuelle Produktion</h3>
     <p>Sie versuchen, jedes Video manuell zu schneiden. Das skaliert nicht.</p>
 
-    <p>Das ist der entscheidende Punkt: <strong>Wenn du 8 Stunden für ein Video brauchst, baust du dir nur einen schlecht bezahlten Job. Kein Business.</strong></p>
+    <div class="pull-quote">
+      Wenn du 8 Stunden für ein Video brauchst, baust du dir nur einen schlecht bezahlten Job. Kein Business.
+    </div>
 
-    <p>Marc hat 2 Monate gebraucht, um die Programmierung/Automatisierung aufzubauen. Heute produziert er <strong>3-5 Videos pro Woche in 23 Minuten Bearbeitungszeit pro Video.</strong></p>
+    <p>Marc hat 2 Monate gebraucht, um die Programmierung/Automatisierung aufzubauen. Heute produziert er 3-5 Videos pro Woche in <strong>23 Minuten Bearbeitungszeit pro Video</strong>.</p>
 
-    <p>Genau dafür hat er das System gebaut, das er heute verkauft: <strong>MaskPilot Pro.</strong></p>
+    <p>Genau dafür gibt's das System, das du hier kennenlernst: <strong>MaskPilot Pro</strong>.</p>
 
-    <h2>Was MaskPilot Pro ist (und was es nicht ist)</h2>
+    <!-- ═══ AKT 6: WHAT MASKPILOT IS (BRIDGE) ═══ -->
+    <h2><span class="skim-headline">Was MaskPilot Pro ist (und was es nicht ist)</span></h2>
 
-    <p>MaskPilot Pro ist <strong>kein Kurs.</strong></p>
+    <p>MaskPilot Pro ist <strong>kein Kurs</strong>.</p>
 
     <p>Kurse waren 2018-2022. 2026 funktionieren sie nicht mehr — weil das Wissen alleine wertlos ist. Du brauchst die <strong>Tools</strong>, nicht nur die Theorie.</p>
 
-    <p>MaskPilot Pro ist ein <strong>Operating System</strong> (deshalb der Name) für faceless Kanäle:</p>
+    <p>MaskPilot Pro ist ein <strong>Operating System</strong> (deshalb der Name) für Faceless-Kanäle:</p>
 
     <ul>
-      <li><strong>Notion-Templates</strong> für Kanal-Setup, SOPs, Skripte, Thumbnails</li>
+      <li><strong>Notion-Templates</strong> für Channel-Setup, SOPs, Skripte, Thumbnails</li>
       <li><strong>Remotion-Codebasis</strong> — programmatische Video-Erstellung. Einmal Setup, unendlich Videos.</li>
-      <li><strong>KI-Workflow-Pakete</strong> — Recherche → Skript → Voiceover → Video → Thumbnail in einer einzigen Pipeline</li>
+      <li><strong>KI-Workflow-Pakete</strong> — Recherche → Skript → Voiceover → Video → Thumbnail in einer Pipeline</li>
       <li><strong>Wöchentliche Live-Calls</strong> mit dem Team (8 Wochen)</li>
-      <li><strong>Privater Kommunikations-Hub</strong> mit anderen MaskPilot-Mitgliedern</li>
-      <li><strong>Channel-Niche-Bibliothek</strong> — 47 vorausgewählte Nischen mit CPM-Daten</li>
+      <li><strong>Privater Hub</strong> mit anderen MaskPilot-Mitgliedern</li>
+      <li><strong>47-Nischen-Bibliothek</strong> mit aktuellen DACH-CPM-Daten</li>
     </ul>
 
-    <p>Aber bevor du auch nur an MaskPilot Pro denkst, solltest du den <strong>kostenpflichtigen Audit (€27)</strong> durchgehen.</p>
+    <div class="callout-warning">
+      <strong>Aber hör mir genau zu:</strong> Bevor du auch nur an MaskPilot Pro denkst, solltest du den €27-Audit durchgehen. Weil Faceless YouTube nichts für jeden ist — und ich will nicht, dass du falsche Erwartungen hast.
+    </div>
 
-    <p>Weil ehrlich: <strong>Faceless YouTube ist nichts für jeden.</strong></p>
-
-    <h2>Der €27 Faceless YouTube Audit (60 Minuten)</h2>
+    <!-- ═══ AKT 7: THE AUDIT ═══ -->
+    <h2><span class="skim-headline">Der €27 Faceless YouTube Audit (60 Min)</span></h2>
 
     <p>Bevor wir jemanden in MaskPilot Pro reinlassen, muss er den <strong>Faceless YouTube Audit</strong> durchgehen.</p>
 
-    <p>Das ist ein 60-minütiger Mini-Course, in dem du:</p>
+    <p>Das ist ein 60-minütiger Mini-Course mit 4 Modulen:</p>
 
-    <ul>
-      <li><strong>In 12 Minuten</strong> entscheidest, ob Faceless YouTube für DEINE Lebenssituation passt</li>
-      <li><strong>In 18 Minuten</strong> deine ideale Nische findest aus 47 vorausgewählten</li>
-      <li><strong>In 22 Minuten</strong> dein erstes Video-Konzept entwickelst</li>
-      <li><strong>In 8 Minuten</strong> entscheidest, ob MaskPilot Pro für dich Sinn macht — oder nicht</li>
-    </ul>
+    <ol class="space-y-3 pl-0 list-none">
+      <li class="flex gap-4 items-start">
+        <span class="bg-navy-700 text-white text-sm font-bold rounded w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">01</span>
+        <span><strong>Eignung-Check (12 Min)</strong> — Klare Ja/Nein-Antwort, ob Faceless YouTube für deine Lebenssituation überhaupt sinnvoll ist. Sei BRUTAL ehrlich.</span>
+      </li>
+      <li class="flex gap-4 items-start">
+        <span class="bg-navy-700 text-white text-sm font-bold rounded w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">02</span>
+        <span><strong>Nischen-Match (18 Min)</strong> — 47 vorausgewählte Nischen mit DACH-CPM-Daten 2026. Du bekommst die 3 besten Matches für DEIN Profil.</span>
+      </li>
+      <li class="flex gap-4 items-start">
+        <span class="bg-navy-700 text-white text-sm font-bold rounded w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">03</span>
+        <span><strong>Erstes Video-Konzept (22 Min)</strong> — Du gehst raus mit Titel, Thumbnail-Brief, Hook-Struktur, Skript-Outline und Voiceover-Vorgaben. Ready zur Produktion.</span>
+      </li>
+      <li class="flex gap-4 items-start">
+        <span class="bg-navy-700 text-white text-sm font-bold rounded w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">04</span>
+        <span><strong>90-Tage-Plan (8 Min)</strong> — Realistische Ziele, Wochenplan, Einnahmen-Prognose. Konkret. Nicht "Inspiration".</span>
+      </li>
+    </ol>
 
-    <p>Der Audit kostet €27.</p>
+    <h3>Warum nicht kostenlos?</h3>
 
-    <p>Warum nicht kostenlos?</p>
+    <p>Weil ich keine Tire-Kicker will. Wer nicht bereit ist, €27 zu investieren, wird auch nicht bereit sein, die 4-6 Stunden pro Woche für die Umsetzung zu investieren.</p>
 
-    <p>Weil wir keine "Tire-Kicker" wollen. Wer nicht bereit ist, €27 zu investieren, wird auch nicht bereit sein, die 4-6 Stunden pro Woche für die Umsetzung zu investieren.</p>
+    <p>Plus: Wenn du dich später für MaskPilot Pro entscheidest, <strong>bekommst du die €27 voll angerechnet.</strong></p>
 
-    <p>Außerdem: Wenn du dich für MaskPilot Pro entscheidest, <strong>bekommst du die €27 zurückerstattet.</strong></p>
+    <!-- ═══ AKT 8: GUARANTEE (Risk Reversal) ═══ -->
+    <div class="callout my-12">
+      <div class="text-4xl mb-3">🛡️</div>
+      <div class="text-accent-500 font-bold uppercase tracking-wider text-sm mb-2">Garantie</div>
+      <h3 class="text-2xl font-bold mb-3 text-white">"Find es heraus oder zahl nichts"</h3>
+      <p class="text-lg text-white/90 mb-1">14 Tage. Wenn du nach dem Audit nicht klarer weißt, ob Faceless YouTube für dich Sinn macht — schreib eine Email. Volle Rückerstattung. Keine Fragen. Kein Quiz. Kein "Gespräch".</p>
+    </div>
 
-    <h2>Letzte Worte (und der Haken, den 80% nicht hören wollen)</h2>
+    <!-- ═══ AKT 9: REALISTIC EXPECTATIONS ═══ -->
+    <h2><span class="skim-headline">Letzte Worte (und der Haken, den 80% nicht hören wollen)</span></h2>
 
     <p>Faceless YouTube ist <strong>kein "schnelles Geld"</strong>.</p>
 
-    <p>Realistische Zeitleisten:</p>
+    <p>Realistische Zeitleisten basierend auf 47 Inner-Circle-Mitgliedern:</p>
+
     <ul>
-      <li><strong>Monat 1-2:</strong> Setup + erstes Video → 0-200 Aufrufe pro Video → €0 Einnahmen</li>
-      <li><strong>Monat 3-4:</strong> Algorithmus startet → erste 1-10K Views Videos → €50-€500 Einnahmen</li>
-      <li><strong>Monat 5-6:</strong> Erstes virales Video → 100K+ Views → €500-€2.500 Einnahmen</li>
-      <li><strong>Monat 7-12:</strong> Skalierung → €2.000-€10.000+ pro Monat</li>
+      <li><strong>Monat 1-2:</strong> Setup + erste Videos. 0-200 Aufrufe pro Video. €0 Einnahmen.</li>
+      <li><strong>Monat 3-4:</strong> Algorithmus startet zu testen. 1-10K Views Videos. €50-€500.</li>
+      <li><strong>Monat 5-6:</strong> Erstes virales Video möglich. 100K+ Views. €500-€2.500.</li>
+      <li><strong>Monat 7-12:</strong> Skalierungs-Phase. €2.000-€10.000+ pro Monat (bei konsequenter Umsetzung).</li>
     </ul>
 
-    <p>Wer in 30 Tagen €10K verdienen will, ist bei uns falsch.</p>
+    <div class="pull-quote">
+      Wer in 30 Tagen €10K verdienen will, ist hier falsch.<br/>Wer in 6-12 Monaten ein zweites Standbein aufbauen will — willkommen.
+    </div>
 
-    <p>Wer in 6-12 Monaten ein zweites Standbein aufbauen will, das langfristig zur Hauptquelle werden kann — willkommen.</p>
+    <!-- ═══ FINAL CTA ═══ -->
+    <div id="final-cta" class="bg-navy-50 border-2 border-navy-100 rounded-2xl p-8 md:p-12 text-center my-16">
+      <div class="inline-block bg-accent-500 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">200 Audits/Monat · Persönliches Feedback</div>
+      <h3 class="text-3xl font-bold text-navy-900 mb-3">Faceless YouTube Audit</h3>
+      <p class="text-slate-600 mb-6 max-w-xl mx-auto text-lg">60 Minuten. €27. 14-Tage-Garantie.<br/>Du gehst raus mit konkreter Nische, erstem Video-Konzept, 90-Tage-Plan.</p>
+      <a href="/audit" onclick="posthog.capture('cta_click_final_block')" class="cta-button inline-block bg-navy-700 text-white px-12 py-5 rounded-lg font-bold text-xl shadow-xl">
+        Audit für €27 starten →
+      </a>
+      <div class="mt-4 text-sm text-slate-500 flex justify-center gap-6 flex-wrap">
+        <span>✓ Sofort-Zugang</span>
+        <span>✓ 14-Tage-Geld-zurück</span>
+        <span>✓ €27 bei Upgrade verrechnet</span>
+      </div>
+    </div>
 
-  </div>
-
-  <!-- CTA Block -->
-  <div class="my-16 bg-navy-50 border-2 border-navy-100 rounded-2xl p-8 md:p-12 text-center">
-    <div class="inline-block bg-accent-500 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-4">Nur 200 Audits/Monat</div>
-    <h3 class="text-2xl md:text-3xl font-bold text-navy-900 mb-4">Faceless YouTube Audit</h3>
-    <p class="text-slate-600 mb-6 max-w-xl mx-auto">60 Minuten. €27. Du findest in 60 Min mehr Klarheit als 95% aller deutschen YouTube-Möchtegerns.</p>
-    <a href="/audit.html" class="cta-button inline-block bg-navy-700 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-lg">
-      Audit für €27 starten →
-    </a>
-    <div class="mt-4 text-sm text-slate-500">✓ Sofort-Zugang ✓ 14-Tage-Geld-zurück-Garantie ✓ €27 wird bei Upgrade verrechnet</div>
-  </div>
+  </div><!-- /article-prose -->
 
   <!-- FAQ Section -->
   <section class="my-16">
-    <h2 class="text-2xl md:text-3xl font-bold text-navy-900 mb-8">Häufige Fragen (vor der Bestellung)</h2>
-    <div class="space-y-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-8">Häufige Fragen (vor der Bestellung)</h2>
+    <div class="space-y-3">
 
-      <details class="border border-slate-200 rounded-xl p-6 group">
-        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center">
+      <details class="border border-slate-200 rounded-xl p-6 group hover:border-navy-300 transition">
+        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center text-lg">
           Brauche ich technische Skills?
-          <span class="text-accent-500 group-open:rotate-180 transition-transform">▼</span>
+          <span class="text-accent-500 group-open:rotate-180 transition-transform text-sm">▼</span>
         </summary>
-        <p class="text-slate-600 mt-4">Nein. Wenn du eine Email schreiben kannst, kannst du das. Die Tools sind alle "No-Code".</p>
+        <p class="text-slate-600 mt-4 leading-relaxed">Nein. Wenn du eine Email schreiben kannst, kannst du das. Alle Tools sind No-Code. Wer Notion + ein paar AI-Apps bedienen kann, hat alles was er braucht.</p>
       </details>
 
-      <details class="border border-slate-200 rounded-xl p-6 group">
-        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center">
-          Wie viel Zeit pro Woche?
-          <span class="text-accent-500 group-open:rotate-180 transition-transform">▼</span>
+      <details class="border border-slate-200 rounded-xl p-6 group hover:border-navy-300 transition">
+        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center text-lg">
+          Wie viel Zeit pro Woche brauche ich?
+          <span class="text-accent-500 group-open:rotate-180 transition-transform text-sm">▼</span>
         </summary>
-        <p class="text-slate-600 mt-4">Realistisch 4-6 Stunden in den ersten 8 Wochen (Setup-Phase). Danach 1-2 Stunden pro Video.</p>
+        <p class="text-slate-600 mt-4 leading-relaxed">Realistisch 4-6 Stunden in den ersten 8 Wochen (Setup-Phase). Danach 1-2 Stunden pro Video. Am Anfang fühlt's sich wie viel an. Sobald die Pipeline läuft, ist es weniger als ein Netflix-Abend.</p>
       </details>
 
-      <details class="border border-slate-200 rounded-xl p-6 group">
-        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center">
-          Was, wenn ich nach dem Audit MaskPilot Pro nicht kaufe?
-          <span class="text-accent-500 group-open:rotate-180 transition-transform">▼</span>
+      <details class="border border-slate-200 rounded-xl p-6 group hover:border-navy-300 transition">
+        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center text-lg">
+          Was, wenn ich nach dem Audit MaskPilot Pro nicht kaufen will?
+          <span class="text-accent-500 group-open:rotate-180 transition-transform text-sm">▼</span>
         </summary>
-        <p class="text-slate-600 mt-4">Kein Problem. Du behältst alles aus dem Audit. Keine versteckten Kosten, keine Continuity.</p>
+        <p class="text-slate-600 mt-4 leading-relaxed">Kein Problem. Du behältst alle Audit-Materialien (4 Module + 3 Boni). Keine versteckten Kosten. Keine Continuity. Keine Email-Spam-Sequenzen. Wenn's nicht passt, ist das auch eine Antwort.</p>
       </details>
 
-      <details class="border border-slate-200 rounded-xl p-6 group">
-        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center">
+      <details class="border border-slate-200 rounded-xl p-6 group hover:border-navy-300 transition">
+        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center text-lg">
           Was, wenn der Audit nicht hilft?
-          <span class="text-accent-500 group-open:rotate-180 transition-transform">▼</span>
+          <span class="text-accent-500 group-open:rotate-180 transition-transform text-sm">▼</span>
         </summary>
-        <p class="text-slate-600 mt-4">14-Tage-Geld-Zurück-Garantie. Email an support@maskpilot.com reicht.</p>
+        <p class="text-slate-600 mt-4 leading-relaxed">14-Tage-Geld-Zurück-Garantie. Email an support@maskpilot.com mit deiner Order-ID. Erstattung in 7 Werktagen. Kein Quiz. Kein "Gespräch zur Klärung". Einfach Email.</p>
+      </details>
+
+      <details class="border border-slate-200 rounded-xl p-6 group hover:border-navy-300 transition">
+        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center text-lg">
+          Funktioniert es auch in Österreich und der Schweiz?
+          <span class="text-accent-500 group-open:rotate-180 transition-transform text-sm">▼</span>
+        </summary>
+        <p class="text-slate-600 mt-4 leading-relaxed">Ja. Der DACH-CPM (was YouTube pro 1.000 Aufrufe zahlt) ist in DE/AT/CH ähnlich hoch. Sabine aus Wien und mehrere Schweizer Mitglieder sind im Inner Circle.</p>
+      </details>
+
+      <details class="border border-slate-200 rounded-xl p-6 group hover:border-navy-300 transition">
+        <summary class="font-semibold text-navy-900 cursor-pointer flex justify-between items-center text-lg">
+          Mache ich was, das gegen YouTubes AGB ist?
+          <span class="text-accent-500 group-open:rotate-180 transition-transform text-sm">▼</span>
+        </summary>
+        <p class="text-slate-600 mt-4 leading-relaxed">Nein. Faceless YouTube ist 100% innerhalb der YouTube-AGB. KI-generierte Inhalte müssen seit März 2024 als "altered or synthetic" markiert sein — das machen wir transparent. Alle Inner-Circle-Channels sind monetarisiert + Partner-Programm-aktiv.</p>
       </details>
 
     </div>
   </section>
 
-  <!-- Final CTA -->
-  <div class="my-16 text-center">
-    <a href="/audit.html" class="cta-button inline-block bg-navy-700 text-white px-12 py-5 rounded-lg font-semibold text-xl shadow-xl">
-      Audit-Platz reservieren (€27)
-    </a>
+  <!-- ═══ PS at the end (JH best practice — 2nd highest read after subject) ═══ -->
+  <div class="border-t border-slate-200 pt-10 mt-10">
+    <p class="text-base text-slate-500 italic mb-4">— Michael S., Founder MaskPilot</p>
+
+    <div class="callout-light">
+      <p class="font-semibold text-navy-900 mb-3">P.S.</p>
+      <p class="text-slate-700 mb-3">Wenn du bis hier gescrollt hast und immer noch unsicher bist — hier die nüchterne Wahrheit: Wenn du in 6 Monaten an gleicher Stelle stehen willst wie heute, scroll weiter und schließ den Tab.</p>
+      <p class="text-slate-700 mb-3">Wenn du in 12 Monaten ein zweites Standbein haben willst, das dir die Option auf Job-Kündigung gibt — der Audit ist Schritt 1.</p>
+      <p class="text-slate-700">€27 ist der Preis von 3 Bier in München. 60 Minuten Zeit ist weniger als eine Folge "Tatort". 14 Tage Geld-zurück-Garantie heißt: das Risiko ist faktisch null.</p>
+      <p class="mt-4">
+        <a href="/audit" onclick="posthog.capture('cta_click_ps')" class="text-navy-700 font-semibold hover:underline">→ Audit-Platz für €27 reservieren</a>
+      </p>
+    </div>
+
+    <p class="text-base text-slate-500 italic mt-6">P.P.S. Wir nehmen 200 Audits pro Monat auf — weil ich jedes Resultat persönlich per Email auswerte. Wenn die 200 voll sind, schließen wir bis zum Folgemonat. Kein Fake-Scarcity-Spiel: echte Limits, weil ich nicht mehr Hände habe.</p>
   </div>
 
 </article>
 
+<!-- Sticky Mobile CTA -->
+<div id="sticky-cta" class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-2xl z-50 md:hidden">
+  <div class="px-4 py-3 flex items-center gap-3">
+    <div class="flex-1">
+      <div class="text-xs text-slate-500">Faceless YouTube Audit</div>
+      <div class="font-bold text-navy-900">€27 · 14-Tage-Garantie</div>
+    </div>
+    <a href="/audit" onclick="posthog.capture('cta_click_sticky_mobile')" class="cta-button bg-navy-700 text-white px-6 py-3 rounded-lg font-bold text-sm">Starten →</a>
+  </div>
+</div>
+
 <!-- Footer -->
-<footer class="bg-slate-50 border-t border-slate-200 py-12 mt-20">
+<footer class="bg-slate-50 border-t border-slate-200 py-12 mt-20 mb-16 md:mb-0">
   <div class="max-w-5xl mx-auto px-6">
     <div class="flex flex-col md:flex-row justify-between gap-8">
       <div>
@@ -373,29 +526,72 @@ posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
       <div class="flex gap-8 text-sm">
         <div>
           <div class="font-semibold text-navy-900 mb-3">Produkt</div>
-          <a href="/audit.html" class="block text-slate-600 hover:text-navy-700 mb-2">Audit (€27)</a>
-          <a href="/audit.html" class="block text-slate-600 hover:text-navy-700">MaskPilot Pro</a>
+          <a href="/audit" class="block text-slate-600 hover:text-navy-700 mb-2">Audit (€27)</a>
+          <a href="/upgrade-1" class="block text-slate-600 hover:text-navy-700">MaskPilot Pro</a>
         </div>
         <div>
           <div class="font-semibold text-navy-900 mb-3">Legal</div>
-          <a href="/agb.html" class="block text-slate-600 hover:text-navy-700 mb-2">AGB</a>
-          <a href="/impressum.html" class="block text-slate-600 hover:text-navy-700 mb-2">Impressum</a>
-          <a href="/datenschutz.html" class="block text-slate-600 hover:text-navy-700">Datenschutz</a>
+          <a href="/agb" class="block text-slate-600 hover:text-navy-700 mb-2">AGB</a>
+          <a href="/impressum" class="block text-slate-600 hover:text-navy-700 mb-2">Impressum</a>
+          <a href="/datenschutz" class="block text-slate-600 hover:text-navy-700">Datenschutz</a>
         </div>
       </div>
     </div>
-    <div class="mt-8 pt-8 border-t border-slate-200 text-xs text-slate-500">
-      © 2026 MaskPilot Pro. Alle Rechte vorbehalten. Hinweis: Verdienste sind individuell und nicht garantiert.
+    <div class="mt-8 pt-8 border-t border-slate-200 text-xs text-slate-500 leading-relaxed">
+      © 2026 MaskPilot Pro. Alle Rechte vorbehalten.<br/>
+      Hinweis: Im Marketing genannte Verdienste sind individuelle Erfahrungen einzelner Mitglieder und stellen keine Erfolgs-Garantie dar. Erfolg hängt von Umsetzung, Zeit-Investment und Marktbedingungen ab.
     </div>
   </div>
 </footer>
 
-<!-- Scroll Animation Script -->
+<!-- Scripts -->
 <script>
+// Reading Progress Bar
+window.addEventListener('scroll', function() {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById('progress-bar').style.width = scrolled + '%';
+});
+
+// Sticky CTA — show after scroll past hero
+window.addEventListener('scroll', function() {
+  const sticky = document.getElementById('sticky-cta');
+  const finalCta = document.getElementById('final-cta');
+  const finalCtaTop = finalCta ? finalCta.getBoundingClientRect().top : 9999;
+  if (window.scrollY > 800 && finalCtaTop > window.innerHeight) {
+    sticky.classList.add('visible');
+  } else {
+    sticky.classList.remove('visible');
+  }
+});
+
+// Fade-in observer
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// PostHog page-section tracking (heatmap-friendly)
+if (typeof posthog !== 'undefined') {
+  posthog.capture('landing_page_loaded', { page: 'index_v2_jh' });
+}
+</script>
+
+<!-- PostHog Analytics: autocapture + session recording + heatmaps -->
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture identify register reset get_distinct_id alias on onFeatureFlags getFeatureFlag isFeatureEnabled".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init("phc_mIQ6H3N0lt5QWzM9sBbJccyVB6M96ep0glqKJshoTLd", {
+  api_host: "https://eu.i.posthog.com",
+  defaults: "2025-05-24",
+  person_profiles: "identified_only",
+  capture_pageview: true,
+  capture_pageleave: true,
+  autocapture: true,
+  session_recording: { maskAllInputs: true, maskTextSelector: ".sensitive" },
+  enable_heatmaps: true,
+  capture_performance: true
+});
 </script>
 
 </body>
